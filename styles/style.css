@@ -24,7 +24,7 @@
 /* Add flex properties here */
 .nav {
   justify-content: flex-end;
-  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 

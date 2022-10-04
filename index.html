@@ -11,7 +11,7 @@
     <div class="page">
       <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
       <header class="header">
-        <div class="nav">
+        <nav class="nav">
           <img
             src="./images/logo.png"
             alt="Practicum Library Logo"
@@ -20,22 +20,22 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" href="#staff">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" href="#events">Events</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a class="nav__link" href="#become-a-member">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a class="nav__link" href="#footer">About</a>
             </li>
             <li>
               <a class="nav__link">Contacts</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <h1 class="header__title">Welcome to the Practicum Library</h1>
         <p class="header__description">
           We're pleased to open our library doors to everyone! Come and expand
@@ -44,19 +44,19 @@
         </p>
         <img
           src="./images/inside_the_library.png"
-          alt="Illustration 'Inside the library'"
+          alt="Illustration 'Inside the library"
           class="header__image"
         />
         <div class="header__footer">
-          <a class="header__link">About the library &darr;</a>
+          <a href="#about" class="header__link">About the library &darr; </a>
           <p class="header__address">
             200 Success Avenue, The Town of Practicum
           </p>
         </div>
       </header>
 
-      <div class="content">
-        <div class="staff">
+      <main class="content">
+        <section class="staff" id="staff">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
@@ -130,9 +130,9 @@
               </div>
             </li>
           </ul>
-        </div>
+        </section>
 
-        <div class="events">
+        <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -165,10 +165,10 @@
           </div>
           <!-- Start creating the composition here -->
 
-          <img src="/images/cafe.png" alt="Cafe" class="events__cover" />
-        </div>
+          <!-- <img  class="events__cover" /> -->
+        </section>
 
-        <div class="membership">
+        <section class="membership" id="become-a-member">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -222,8 +222,9 @@
               </p>
             </li>
           </ul>
-        </div>
-        <div class="about">
+        </section>
+
+        <section class="about" id="about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -244,12 +245,11 @@
               the American Geophysical Union.
             </p>
           </div>
-          <div class="about__circle" src="./images/circle"></div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+      </main>
+      <footer class="footer" id="footer">
         <!-- The time to mark up the footer has come, you can do it 💪 -->
-      </div>
+      </footer>
     </div>
   </body>
 </html>
